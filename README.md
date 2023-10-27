@@ -150,3 +150,53 @@ Package name React-Router-dom for using routing.
 -Suspense
 -lazy
   import{Suspense,lazy} from 'react'
+
+## Q.- Difference between Axios and fetch.
+Ans-
+|Axios|fetch|
+|----|----|
+|Axios is a third party library|featch is totally Java Script method|
+|Axios Automatically transfer data.|Have to manually transform data|
+|Has to be compiled|can be read directly by browsers|
+|Need to install externally|No need to install|
+
+# ..... Day-3 .....
+
+## Q.- What is Props Drilling Concept ?What is State Uplifting ?
+Ans-
+#### Props Drilling-
+Prop drilling occurs when a parent component passes data down to its children and then those children pass the same data down to their own children. This process can continue indefinitely.
+Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final level.
+Prop drilling is also known as "props passind" .is a common issue in React application.
+#### State Uplifting-
+Normaly send the data parent to child if any way send the data child to parent then concept of state Uplifting for send the data child to parent.
+
+## Q.- What is Context api?
+Ans-
+The Context API is a React structure that allows you to share specific data from all levels of your application and aids in solving prop-drilling. React Hooks are functions that serve as a modular replacement for state and lifecycle methods written in functional components.
+
+## Q.- What is UseState Hook ?(Implementation)
+Ans-
+The useState() is a Hook that allows you to have state variables in functional components . so basically useState is the ability to encapsulate local state in a functional component.
+State generally refers to data or properties that need to be tracking in an application.
+#### Syntax-
+const [state, setState] = useState(initialstate)
+
+## Q.- What is useEffect Hook ?(Implementation)
+Ans-
+-The useEffect hook in React is use to handle the side effects in React such as fetching data, and updating DOM. This hook runs on every render but there is also a way of using a dependency array using which we can control the effect of rendering
+-The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+By using this Hook, you tell React that your component needs to do something after render.
+
+## Q.- clean up in useEffect?
+Ans-
+React’s useEffect cleanup function saves applications from unwanted behaviors like memory leaks by cleaning up effects. In doing so, we can optimize our application’s performance.
+
+## Q.- Do you know about SEO ? Is it true that react js supports SEO support
+Ans-
+Search Engine Optimization (SEO) helps in improving the rank of a website in search engines. The search engines have algorithms designed for them to get the most desirable results from the World Wide Web (WWW).
+
+
+
+
+
