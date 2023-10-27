@@ -32,10 +32,75 @@ constructor(props) {
 
 ## Q.- What is package.json?
 Ans-
+package.json is used to store the metadata associated with the project as well as to store the list of dependency packages. In order to add dependency packages to your projects, you need to create package.json file. The file makes it easy for others to manage and install the packages associated with the project.
 
+A package.json file:
 
- 
- 
+-lists the packages your project depends on
+-specifies versions of a package that your project can use.
+-makes your build reproducible, and therefore easier to share with other developers.
+
+## Q.- What does mean by state and its use in react?
+Ans-
+The state is a built-in React object that is used to contain data or information about the component. A component's state can change over time; whenever it changes, the component re-renders.
+-A state can be modified based on user action or network changes
+-Every time the state of an object changes, React re-renders the component to the browser
+-The state object is initialized in the constructor
+-The state object can store multiple properties
+-this.setState() is used to change the value of the state object
+-setState() function performs a shallow merge between the new and the previous state.
+
+## Q.- What is JSX and why do we use it instead of js?
+Ans-
+JS is simply a scripting language, adding functionality into your website. JSX is an addition to the JavaScript syntax which is a mixture of both HTML and JavaScript. Both JS and JSX are interchangeable but JSX makes the code easier to understand for users.
+
+JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement()  and/or appendChild() methods.
+JSX converts HTML tags into react elements.
+
+## Q.- What is the Difference between react and react native? Which one is library or framework?
+Ans-
+|react|react native|
+|----|----|
+|React is known as ReactJs, which is a JavaScript library to build single-page web applications.| React Native is a React JS-based framework to design mobile apps|
+|It is used for developing web applications.|It is used for developing mobile applications.|
+|	It can be executed on all platforms.|It is not platform independent. It takes more effort to be executed on all platforms.|
+|	It uses a JavaScript library and CSS for animations.|It comes with built-in animation libraries.|
+|	It uses React-router for navigating web pages.|It has built-in Navigator library for navigating mobile applications.|
+|It uses HTML tags.|	It does not use HTML tags.|
+|It provides high security.|It provides low security in comparison to ReactJS.|
+|In this, the Virtual DOM renders the browser code|In this, Native uses its API to render code for mobile applications.|
+
+## Q.- Difference b/w Stateful and stateless Component?
+Ans-
+|Stateful|stateless|
+|----|----|
+|A component that manages the state in class-based with state or functional with useState.|A component that has no internal state management in it.|
+|In some component, the data keeps changing, for example, watching the cricket score etc.|In some component, the data remains the same, for example, showing the static data.|
+|In most of the cases, the class-based components extend react component.|Function components are simply functions that receive the props and return the JSX code.|
+|Stateful components can use react life cycle hooks|Stateless components can not use the react life cycle hooks|
+|In stateful components it good to use the this instance|Here need not to use this instance, they just receive the props as an argument|
+
+## Q.- What do you know about NPM?
+Ans-
+The name npm (Node Package Manager) stems from when npm first was created as a package manager for Node.js.
+All npm packages are defined in files called package.json.
+npm can manage dependencies.
+npm can (in one command line) install all the dependencies of a project.
+Dependencies are also defined in package.json.
+Open-source developers use npm to share software.
+npm is the world's largest Software Registry.
+The registry contains over 800,000 code packages.
+
+## Q.- Do you prefer function-based or class component and why ?
+Ans-
+I do prefer the function-based component because -
+-Simplicity: Functional components are simpler and easier to understand than class components.
+-Performance: Functional components are more performant than class components.
+-Easier to test: Functional components are easier to test than class components.
+-Easier to reuse: Functional components are easier to reuse than class components.
+-Easier to reason about Functional components are easier to reason about than class components.
+-Hooks: Functional components can use the React hooks.
+
  ## Q.=>  H/W-  Difference b/w Props and State? 
     Ans -  
 | Props | State|
@@ -85,6 +150,3 @@ Package name React-Router-dom for using routing.
 -Suspense
 -lazy
   import{Suspense,lazy} from 'react'
-
-
-
