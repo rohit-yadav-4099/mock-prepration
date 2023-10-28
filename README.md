@@ -167,7 +167,7 @@ Ans-
 #### Props Drilling-
 Prop drilling occurs when a parent component passes data down to its children and then those children pass the same data down to their own children. This process can continue indefinitely.
 Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final level.
-Prop drilling is also known as "props passind" .is a common issue in React application.
+Prop drilling is also known as "props passing" .is a common issue in React application.
 #### State Uplifting-
 Normaly send the data parent to child if any way send the data child to parent then concept of state Uplifting for send the data child to parent.
 
