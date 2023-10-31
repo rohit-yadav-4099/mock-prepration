@@ -167,7 +167,7 @@ Ans-
 #### Props Drilling-
 Prop drilling occurs when a parent component passes data down to its children and then those children pass the same data down to their own children. This process can continue indefinitely.
 Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final level.
-Prop drilling is also known as "props passing" .is a common issue in React application.
+Prop drilling is also known as "props passind" .is a common issue in React application.
 #### State Uplifting-
 Normaly send the data parent to child if any way send the data child to parent then concept of state Uplifting for send the data child to parent.
 
@@ -197,6 +197,34 @@ Ans-
 Search Engine Optimization (SEO) helps in improving the rank of a website in search engines. The search engines have algorithms designed for them to get the most desirable results from the World Wide Web (WWW).
 
 
+# ..... Day-5 ..... 
 
+## Q.- What are React Life cycles Explain each one with Example
+Ans-
+Each component in React has a lifecycle which you can monitor and manipulate during its three main phases.
+React components have a lifecycle consisting of three phases: Mounting, Updating, and Unmounting.
+#####  Mounting-
+Mounting is the phase of the component lifecycle when the initialization of the component is completed and the component is mounted on the DOM and rendered for the first time on the webpage.
+###### Constructor()-
 
+###### Super()-
+-The supe() keyword in react is used to call the constructor of the parent class. this is required when you need to access some variable from the parent class.
 
+###### render()-
+-The render method retrn the JSX to be display on the screen.
+-It must be a pure function, meaning it should 
+
+#### Updation-
+React is a JS library that helps create Active web pages easily. Now active web pages are specific pages that behave according to their user.
+
+#### Unmounting-
+This is the final phase of the lifecycle of the component which is the phase of unmounting the component from the DOM. The following function is the sole member of this phase.
+
+## Q.- What is memory leak and how to overcome?
+Ans-
+A memory leak may also happen when an object is stored in memory but cannot be accessed by the running code.
+In React, memory leaks can occur when components are not properly managed and unmounted, resulting in the retention of unnecessary memory.
+
+## Q.- Do you know about redux?
+Ans-
+Redux is a pattern for managing application state. If you do not have problems with state management, you might find the benefits of Redux harder to understand. Some UI libraries (like React) have their own state management system.
