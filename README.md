@@ -197,6 +197,68 @@ Ans-
 Search Engine Optimization (SEO) helps in improving the rank of a website in search engines. The search engines have algorithms designed for them to get the most desirable results from the World Wide Web (WWW).
 
 
+# ..... day-4 .....
+
+## Q.- Difference between callback and useCallback Hook?
+Ans-
+A callback function in JavaScript is a function that is passed as an argument to another function and is executed after the completion of that function. Callbacks are commonly used in asynchronous operations, event handling, and other scenarios where you want to specify what should happen after a certain task is done.
+The useCallback hook is part of React, a popular JavaScript library for building user interfaces. It is used to memoize functions and optimize performance in React components.
+The primary purpose of useCallback is to avoid unnecessary re-rendering of child components in React when a parent component re-renders. It takes a function and an array of dependencies as arguments, and it returns a memoized version of the function. This memoized function remains the same between renders unless one of the dependencies has changed.
+useCallback is a React Hook that returns a memoized callback function. Memoization is a technique for caching the results of a function so that they can be reused later without having to recalculate them. This can improve performance, especially when the function is expensive to compute.
+### Difference between callback and useCallback -
+The main difference between a callback and a useCallback hook is that a callback is simply a function that is passed as an argument to another function, while useCallback is a React Hook that returns a memoized callback function. This means that a callback can be any function, while a useCallback hook can only be used to memoize a callback function.
+Another difference is that a callback is typically used to handle events or to pass data between components, while useCallback is typically used to prevent child components from re-rendering unnecessarily.
+## Q.- What is useMemo Hooks?
+useMemo is one of the built-in hooks in React that allows you to optimize the performance of your application by memoizing the results of expensive function calls. It is particularly useful when you have a function that computes a value, and you want to cache and reuse that value unless some dependencies change. This can help reduce unnecessary recalculations, especially when dealing with computationally intensive tasks or rendering components.
+The useMemo hook takes two arguments:
+A function that computes the memoized value.
+An array of dependencies. These dependencies determine when the memoized value should be recalculated. If any of the dependencies change, the memoized value will be recalculated; otherwise, it will be reused.
+## Q.- Why do we need keys in react less?
+In React, keys are special attributes that provide a way to identify and differentiate between elements in a list. Each element in an array should have a unique key. React uses keys to efficiently update the user interface by identifying which elements have changed or been added/removed when rendering lists.
+#### The Problem Without Keys
+Without keys, when React re-renders a list, it has no way to determine which elements have changed or where new items have been inserted. This can lead to unexpected and incorrect behavior.
+#### The Solution with Keys
+By providing unique keys to elements in a list, React can accurately track changes. When React re-renders a list, it will compare the keys of the new elements to the previous ones, allowing it to update, reorder, or remove elements effectively.
+#### When to Use Keys
+When rendering dynamic lists or arrays in React components.
+When dealing with lists that may change over time, such as when items are added, removed, or reordered.
+## Q.- What is UseRef Hook ?
+The useRef hook is a powerful tool in React.js that allows you to create and manage references to DOM elements or any mutable values in a functional component. It is especially useful for accessing, interacting with, and tracking changes to DOM elements, implementing animations, and more.
+Use Cases:
+Managing DOM elements.
+Implementing animations and transitions.
+Storing and accessing previous state values.
+Integrating with third-party libraries.
+
+## Q.- What is UseReducer Hook ?(Implementation)
+Ans-
+The useReducer hook is a built-in hook in React that is used for managing more complex state logic in functional components. It is often an alternative to the useState hook when you need to handle state changes in a more structured and predictable way. useReducer follows the principles of the Redux library and can help you manage state in a more predictable and centralized manner.
+
+#### When to Use useReducer?
+
+Use useReducer when you have complex state logic that involves multiple sub-values, or when the next state depends on the previous state.
+It is a good choice when your state transitions are not simple and straightforward.
+It can be beneficial in scenarios where you need to pass down state management to child components.
+Use it when you want to centralize your state logic and maintain a single source of truth.
+
+#### Basic Syntax
+
+const [state, dispatch] = useReducer(reducer, initialState);
+const [state, dispatch - setState] = useReducer((logic, action), 0)
+const [count, setCount] = useState(0);
+-state: The current state.
+-dispatch: A function used to dispatch actions to update the state.
+-reducer: A function that specifies how the state should be updated.
+-initialState: The initial state value.
+
+## Q.- Difference between useEffect and useContext ?
+Ans-
+|useEffect|useContext|
+|----|----|
+|useEffect is used for managing side effects within a component|useContext is used for consuming context data provided by a parent component.|
+|useEffect takes two arguments: a function with side effects and an array of dependencies to control when the effect runs.|useContext takes a single argument, the Context object, and returns the current context value.|
+|useEffect is primarily used for managing asynchronous operations and side effects.|useContext is used for sharing data (such as global state) across components.|
+
 # ..... Day-5 ..... 
 
 ## Q.- What are React Life cycles Explain each one with Example
