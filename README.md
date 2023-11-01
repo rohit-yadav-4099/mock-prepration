@@ -290,3 +290,18 @@ In React, memory leaks can occur when components are not properly managed and un
 ## Q.- Do you know about redux?
 Ans-
 Redux is a pattern for managing application state. If you do not have problems with state management, you might find the benefits of Redux harder to understand. Some UI libraries (like React) have their own state management system.
+
+
+# ..... Day-6 .....
+
+## Q.- Explain reducer as pure function in redux
+Ans-
+-Reducers are pure function that take in a state and -action and return a new state.
+-A reducer is a pure function that determines changes to an application’s state.Reducer is one of the building blocks of Redux.
+-The reducer are the pure function that contain the logic and calculation that needed to be performed on the state.
+
+## Q.- Why do we use redux thunk?
+Ans-
+Thunks are a standard approach for writing async logic in Redux apps, and are commonly used for data fetching.
+Redux Thunk is middleware that allows you to return functions, rather than just actions, within Redux.
+The main objective of using Redux Thunk is to establish asynchronous communication from the externally present API into fetching and saving data.
